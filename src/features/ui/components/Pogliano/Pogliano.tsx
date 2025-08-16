@@ -1,13 +1,14 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import classes from './PoglianoSection.module.css';
 
 export default function PoglianoSection() {
-  const [advantages,setAdvantages] = useState([
-    {id:1, text:'Толщина от 20 до 40 мкм, в зависимости от задачи'},
-    {id:2, text:'До 8 цветов печати (флексография / офсет)'},
-    {id:3, text:'Барьерные свойства — защита от света, влаги и кислорода'},
-    {id:4, text:'Производство в Италии, более 50 лет на рынке'}
-  ])
+  const advantages = [
+  { id: 1, text: 'Толщина от 20 до 40 мкм, в зависимости от задачи' },
+  { id: 2, text: 'До 8 цветов печати (флексография / офсет)' },
+  { id: 3, text: 'Барьерные свойства — защита от света, влаги и кислорода' },
+  { id: 4, text: 'Производство в Италии, более 50 лет на рынке' },
+];
+
 
   return (
     <section className={classes.section}>

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import classes from './Alusense.module.css';
 import palette from '@img/aluthumb.jpeg'
 
@@ -6,12 +6,12 @@ import palette from '@img/aluthumb.jpeg'
 
 const Alusense = () => {
 
-  const [advantages, setAdvantages] = useState([
+  const advantages = [
     {id:1, text:'Совместимы с Nespresso®'},
     {id:2, text:'Мономатериал — 100% перерабатываемый алюминий'},
     {id:3, text:'До 6 цветов на паллете',},
     {id:4, text:'Производство в Бельгии, более 10 лет на рынке'},
-  ])
+  ]
   
   return (
     <section className={classes.section}>
