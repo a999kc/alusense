@@ -8,6 +8,6 @@ export default defineConfig({
   plugins: [react(),tailwindcss(),tsconfigPaths({
       projects: ['./tsconfig.app.json'], 
     }),],
-  base: 'alusense'
+  base: '/alusense/'
   
 })
