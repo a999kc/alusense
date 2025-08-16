@@ -1,0 +1,112 @@
+.container {
+    padding: 4rem 0;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.offer {
+    
+    background-image: url('../../../../shared/assets/img/offer.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+
+    margin-bottom: 3rem;
+}
+
+.offer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3); /* затемнение для читаемости текста */
+    z-index: -1;
+}
+
+@media (min-width: 768px) {
+    .offer {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+}
+
+.offerHeader {
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.offerDesc {
+    text-align: center;
+    color: #eee;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 4rem;
+    line-height: 1.5;
+}
+
+.offerCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    /* justify-content: space-evenly; */
+    justify-content: space-around;
+}
+
+.offerCard {
+    
+    /* flex: 1 1 300px; */
+    max-width: 500px;
+    max-width: 300px;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background-color: #ffeaea;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* background-color: transparent; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.offerCard:nth-child(2) {
+    background-color: #eaeaff;
+}
+
+.offerCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.offerCardTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+.offerCardDesc {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.offerCardImg {
+    /* margin-bottom: 2rem */
+}
+
+
+.offerCardLink {
+    width: 100%;
+    margin-top: 1rem;
+    padding:1rem 2.0rem;
+    border: 2px solid #444;
+    border-radius: 1rem;
+}
